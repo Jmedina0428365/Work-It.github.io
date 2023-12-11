@@ -1,27 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Work-It</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      margin: 10;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      margin: 10px;
+      border: 1px solid #333;
+      background-color: #f0f0f0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .button:nth-child(1) {
+      padding: 20px 105px;
+    }
+    .button:nth-child(2) {
+      padding: 20px 94px;
+    }
+    .button:nth-child(3) {
+      padding: 20px 20px;
+    }
+    .button:hover {
+      background-color: #ddd;
+    }
+    .button:hover {
+      background-color: #ddd;
+    }
+  </style>
 </head>
 <body style="background-color: black;">
+
+  <h1 style="color: white; font-size: 128px; font-family: calibri;"> Work-It</h1>
+
+  <div class="button-container">
+    <button style="font-size: 32px;" class="button">Log In</button>
+    <button style="font-size: 32px;" class="button">Sign Up</button>
+    <a href="log.html" style="font-size: 32px; color: black;" class="button">Continue as Guest</a>
+  </div>
+
 </body>
 </html>
-
-<h style="color: White; font-size: 128px;"> Work-It</h>
-
-<form>
-    <p style="color: white;"> Name</p>
-    <input type="name">
-    <p style="color: white;"> Email</p>
-    <input type="email">
-    <p style="color: white;"> Password</p>
-    <input type="password">
-</form>
-<p style="color:White;" id="datetime"></p>
-<script>
-    var now = new Date();
-    var datetime = now.toLocaleString();
-
-    document.getElementById("datetime").innerHTML = datetime;
-</script>
